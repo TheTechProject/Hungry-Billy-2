@@ -27,6 +27,10 @@ public class Zone : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Returns a random road in the zone, and sends it's position to the DestinationManager.
+    /// </summary>
+    /// <returns>Transform of random road</returns>
     public Transform GetRandomRoadDestination()
     {
         int highestRoadNumber = roadsInZone.Count - 1;
